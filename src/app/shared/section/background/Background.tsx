@@ -2,7 +2,7 @@
 
 import { useState, useRef, useEffect } from 'react';
 import { FaChevronRight } from 'react-icons/fa';
-import styles from './Timeline.module.css';
+import styles from './Background.module.css';
 import background from 'data/background.json';
 import ProjectModal from 'component/modal/ProjectModal';
 import SectionHeader from 'component/layout/SectionHeader';
