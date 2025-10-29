@@ -74,3 +74,64 @@
     font-size: 0.9rem;
     color: #888;
 }
+
+@media (max-width: 1024px) {
+    .section {
+        padding: 80px 6vw 50px;
+    }
+
+    .text {
+        font-size: 1rem;
+        margin-bottom: 25px;
+    }
+
+    .mail {
+        font-size: 1rem;
+    }
+
+    .socials {
+        gap: 25px;
+        margin-top: 30px;
+    }
+
+    .socials a {
+        font-size: 1.4rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .section {
+        padding: 60px 5vw 40px;
+    }
+
+    .title {
+        font-size: 1.5rem;
+    }
+
+    .text {
+        font-size: 0.95rem;
+        line-height: 1.5;
+    }
+
+    .mail {
+        font-size: 0.95rem;
+        gap: 8px;
+        word-break: break-word;
+    }
+
+    .socials {
+        flex-direction: row;
+        gap: 20px;
+        margin-top: 25px;
+    }
+
+    .socials a {
+        font-size: 1.3rem;
+    }
+
+    .bottom {
+        margin-top: 50px;
+        padding-top: 25px;
+        font-size: 0.85rem;
+    }
+}
