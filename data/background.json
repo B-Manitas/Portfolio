@@ -3,11 +3,12 @@
         "year": 2020,
         "items": [
             {
-                "title": "Baccalauréat Scientifique",
+                "title": "Scientific Baccalaureate",
                 "subtitle": "Lycée Antoine de Saint-Exupéry",
                 "type": "education",
-                "description": "Mention Très Bien, spécialité Mathématiques.",
-                "clickable": false
+                "description": "High honors, Mathematics specialization.",
+                "clickable": false,
+                "link": "https://lycee-st-exupery.fr/"
             }
         ]
     },
@@ -15,20 +16,28 @@
         "year": 2023,
         "items": [
             {
-                "title": "Double Licence Mathématiques et Informatique",
-                "subtitle": "Université Paris-Saclay",
+                "title": "Double Bachelor's in Mathematics and Computer Science",
+                "subtitle": "Université Paris - Saclay",
                 "type": "education",
-                "clickable": false
+                "clickable": false,
+                "link": "https://www.universite-paris-saclay.fr/"
             },
             {
-                "title": "Stage en Informatique",
+                "title": "Enhancing Supercomputer Tracking Tool",
                 "subtitle": "CEA",
-                "description": "Développement d’outils d’analyse de données.",
+                "location": "Paris, France",
+                "description": "Development and optimization of software tools for scientific data analysis.",
                 "type": "internship",
                 "clickable": true,
                 "link": "https://www.cea.fr/",
                 "linkText": "cea.fr",
-                "fullText": "Description complète du stage à CEA, missions détaillées, technologies, résultats et apprentissages."
+                "duration": "2 months",
+                "fullDescription": "The main goal of this internship was to improve a supercomputer usage tracking tool used by the CEA Energy Department.\n\n## Key Objectives\n\nThe main objectives of this internship were:\n- **Data Collection**: The primary task was to gather data from a website and a terminal regarding the usage of machines by CNRS and CINES. The data had to be extracted, standardized, and stored in a database for further analysis.\n- **Data Analysis**: Subsequently, data analysis was performed to track each user's daily usage. This analysis is available through daily reports emailed to lab managers and on a dedicated website.\n- **Website Restoration**: Another responsibility was to restore the functionality of a website using the Django framework. The site code was reorganized using the Model-View-Controller pattern to improve code structure and maintainability.\n- **SQL Query Optimization**: It was also necessary to redesign the SQL queries used for data storage to make them more efficient and facilitate code maintenance.",
+                "technologies": [
+                    "Python",
+                    "Django",
+                    "Git"
+                ]
             }
         ]
     },
@@ -37,17 +46,21 @@
         "items": [
             {
                 "title": "Master 1 - Data Science",
-                "subtitle": "Université Paris-Saclay",
-                "type": "education"
+                "subtitle": "Université Paris - Saclay",
+                "type": "education",
+                "clickable": false,
+                "link": "https://www.universite-paris-saclay.fr/"
             },
             {
-                "title": "Stage en Data Science",
+                "title": "Unsupervised Machine Learning",
                 "subtitle": "Enedis",
                 "location": "Paris, France",
                 "type": "internship",
                 "link": "https://www.enedis.fr/",
                 "linkText": "enedis.fr",
-                "description": "Analyse de données pour l’optimisation des réseaux électriques.",
+                "duration": "4 months",
+                "description": "Intelligent detection of incidents on the French electrical network.",
+                "fullDescription": "The internship focuses on analyzing incidents in the French electrical network, aiming to design an **unsupervised machine learning** model capable of automatically detecting and identifying the **affected electrical substations** during a failure.\n\n## Main Approaches\n\nThe internship combines two main approaches:\n- **Multivariate Time Series Clustering**: This method allows detecting patterns and anomalies in voltage data.\n- **Network Topology Analysis via Graphs**: Helps understand interconnections between electrical substations.\n\n## Main Internship Steps\n\n1. **Data Collection and Preparation**  \nThe first step involved extracting a large volume of voltage log data from the information system using SQL queries.\n2. **Time Series Processing and Analysis**  \nOnce collected, specific methods were applied to normalize and analyze the multivariate time series, identifying recurring patterns and anomalies indicative of incidents.\n3. **Modeling and Optimization**  \nA clustering model based on the **HDBSCAN** algorithm was developed and optimized. This algorithm handles data complexity and noise effectively, enabling relevant grouping of incidents.\n4. **Integration of Topological Data**  \nTo improve model accuracy, substation topology data was integrated. **Node2Vec** embedding was used to convert these data into a format usable by the clustering model.\n5. **Performance Evaluation**  \nFinally, the model's performance was evaluated and compared with existing solutions, measuring its accuracy in identifying affected substations.",
                 "clickable": true
             }
         ]
@@ -57,17 +70,29 @@
         "items": [
             {
                 "title": "Master 2 - Data Science",
-                "subtitle": "Université Paris-Saclay",
-                "type": "education"
+                "subtitle": "Université Paris - Saclay",
+                "type": "education",
+                "clickable": false,
+                "link": "https://www.universite-paris-saclay.fr/"
             },
             {
-                "title": "Stage en Data Science",
+                "title": "National Student Entrepreneur Status",
+                "subtitle": "Pépite PEIPS",
+                "type": "education",
+                "description": "Recognition of entrepreneurial skills and support for project development.",
+                "clickable": false,
+                "link": "https://pepite-peips.pepitizy.fr/fr"
+            },
+            {
+                "title": "Energy Performance Modeling",
                 "subtitle": "E-nno",
-                "location": "Genève, Suisse",
+                "location": "Geneva, Switzerland",
                 "type": "internship",
                 "link": "https://www.e-nno.ch/",
                 "linkText": "e-nno.ch",
-                "description": "Développement de modèles prédictifs pour la gestion énergétique.",
+                "duration": "6 months",
+                "description": "Modeling and analyzing building energy performance to detect and prevent drops in efficiency.",
+                "fullDescription": "This internship, conducted at E-nno, focused on developing tools to analyze and improve building energy performance, with a focus on HVAC systems, domestic hot water, and solar thermal systems. The goal was to characterize building energy behavior and automatically detect performance drops.\n\n## Main Approaches\n\nThe internship combines several approaches:\n\n- **Statistical Modeling and Machine Learning**: To model building thermal profiles and solar thermal production from collected data.\n- **Time Series Analysis and Anomaly Detection**: To monitor performance variations and identify malfunctions.\n\n## Steps and Achievements\n\n1. **Energy System Modeling**: Development of machine learning algorithms to build models capable of characterizing building energy behavior.\n2. **Analysis Pipeline Construction**: Creation of a complete workflow to analyze a given period of a building and generate a thermal profile characterization.\n3. **Business Tool Development**: Design of an intuitive Streamlit interface, facilitating access to analyses and result interpretation for internal teams.\n4. **Alert System Implementation**: Integration of a monitoring system with Airflow to signal drops in solar thermal performance and enable proactive intervention.\n\n## Internship Impact\n\n- Improved understanding of building energy behavior.\n- Enhanced decision-making through automated and summarized analyses.\n- Provided a practical tool to advise clients and identify performance drop points.",
                 "clickable": true
             }
         ]
