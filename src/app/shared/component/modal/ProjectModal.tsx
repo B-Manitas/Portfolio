@@ -5,7 +5,7 @@ import Image from 'next/image';
 import { FiExternalLink, FiX } from 'react-icons/fi';
 
 import styles from './ProjectModal.module.css';
-import type { TProject } from '../../config/types';
+import type { TProject } from 'config/types';
 
 interface ProjectModalProps {
 	project: TProject | null;

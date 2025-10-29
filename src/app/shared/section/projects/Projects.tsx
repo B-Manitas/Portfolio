@@ -6,7 +6,7 @@ import ProjectModal from 'component/modal/ProjectModal';
 import projectsData from 'data/projects.json';
 import SectionHeader from 'component/layout/SectionHeader';
 import styles from './Projects.module.css';
-import type { TProject } from '../../config/types';
+import type { TProject } from 'config/types';
 
 const ALL = 'Tous';
 
