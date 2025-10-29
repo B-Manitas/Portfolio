@@ -51,7 +51,7 @@
 .yearGroup::before {
   content: "";
   position: absolute;
-  top: 3rem;
+  top: 3.1rem;
   left: 50%;
   transform: translateX(-50%);
   width: 1rem;
@@ -152,34 +152,59 @@
   word-break: break-word;
 }
 
-.card.stage {
+.card.internship {
   border-left: 0.35rem solid #a6c8ff;
 }
 
-.card.formation {
+.card.education {
   border-left: 0.35rem solid #ffd9a6;
 }
 
-.card.metier {
+.card.job {
   border-left: 0.35rem solid #a6ffd1;
 }
 
-/* Responsive */
-@media (max-width: 768px) {
+@media (min-width: 769px) and (max-width: 1024px) {
+  .timelineContainer {
+    padding: 2rem 3%;
+    overflow-x: auto;
+  }
+
   .timeline {
-    gap: 2rem;
+    gap: 3rem;
+    padding-bottom: 2rem;
+  }
+
+  .yearGroup {
+    gap: 1rem;
+  }
+
+  .yearGroup:last-child {
+    margin-right: 3rem;
+  }
+
+  .year {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
   }
 
   .items {
-    max-width: 16rem;
+    max-width: 18rem;
+    margin-top: 4rem;
+    gap: 1.25rem;
+  }
+
+  .card {
+    min-height: 5rem;
+    padding: 0.9rem 1.1rem;
   }
 
   .cardHeader h3 {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
   }
 
   .subtitle {
-    font-size: 0.9rem;
+    font-size: 0.95rem;
   }
 
   .location {
@@ -187,6 +212,61 @@
   }
 
   .description {
-    font-size: 0.85rem;
+    font-size: 0.88rem;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .timelineContainer {
+    padding: 0 1rem;
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+
+  .timeline {
+    all: unset;
+    flex-direction: column;
+    position: relative;
+  }
+
+  .timeline::before {
+    display: none;
+  }
+
+  .yearGroup {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+    position: relative;
+    margin-bottom: 2.5rem;
+  }
+
+  .yearGroup::before {
+    display: none;
+  }
+
+  .year {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--primary);
+    margin-bottom: 0.5rem;
+    text-align: left;
+  }
+
+  .items {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: none;
+    margin-top: 0;
+    gap: 1rem;
+  }
+
+  .card {
+    display: block;
+    width: 100%;
+    padding: 0.75rem 1rem;
+    box-sizing: border-box;
   }
 }
