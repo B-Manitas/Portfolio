@@ -35,7 +35,6 @@ export const useNodeGraph = (
 	const visible = useRef<boolean>(true);
 	const animationId = useRef<number | null>(null);
 
-	const nodeCount = options.nodeCount || 50;
 	const explosionChance = options.explosionChance || 0.9;
 
 	useEffect(() => {
@@ -48,6 +47,16 @@ export const useNodeGraph = (
 		canvas.height = window.innerHeight;
 		let width = canvas.width;
 		let height = canvas.height;
+
+		// Define number of nodes based on screen size
+		const getNodeCount = () => {
+			const screenWidth = window.innerWidth;
+			if (screenWidth <= 768) return 15; // mobile
+			if (screenWidth <= 1024) return 30; // tablet
+			return options.nodeCount || 50; // desktop
+		};
+
+		const nodeCount = getNodeCount();
 
 		const nodes: Node[] = Array.from({ length: nodeCount }, () => {
 			const x = Math.random() * width;
@@ -83,14 +92,16 @@ export const useNodeGraph = (
 		};
 
 		const animate = () => {
-			if (!visible.current) return; // stop drawing if off-screen
+			if (!visible.current) return;
 
+			// Gradient background
 			const gradient = ctx.createLinearGradient(0, 0, 0, height);
 			gradient.addColorStop(0, '#f0f0f0');
 			gradient.addColorStop(1, '#ffffff');
 			ctx.fillStyle = gradient;
 			ctx.fillRect(0, 0, width, height);
 
+			// Random explosions
 			const now = Date.now();
 			if (now - lastExplosion.current > 3000 && Math.random() < explosionChance) {
 				const idx = Math.floor(Math.random() * nodes.length);
@@ -98,6 +109,7 @@ export const useNodeGraph = (
 				lastExplosion.current = now;
 			}
 
+			// Update nodes
 			nodes.forEach((n) => {
 				n.angle += n.speed;
 				n.vx += Math.cos(n.angle) * 0.02;
@@ -134,6 +146,7 @@ export const useNodeGraph = (
 				}
 			});
 
+			// Lines between nodes
 			ctx.strokeStyle = 'rgba(128,128,128,0.2)';
 			ctx.lineWidth = 1;
 			for (let i = 0; i < nodes.length; i++) {
@@ -150,6 +163,7 @@ export const useNodeGraph = (
 				}
 			}
 
+			// Draw nodes
 			nodes.forEach((n) => {
 				ctx.beginPath();
 				ctx.arc(n.x, n.y, 3, 0, Math.PI * 2);
@@ -157,6 +171,7 @@ export const useNodeGraph = (
 				ctx.fill();
 			});
 
+			// Update and draw particles
 			for (let i = particles.length - 1; i >= 0; i--) {
 				const p = particles[i];
 				p.x += p.vx;
@@ -177,9 +192,7 @@ export const useNodeGraph = (
 		};
 
 		const start = () => {
-			if (!animationId.current) {
-				animationId.current = requestAnimationFrame(animate);
-			}
+			if (!animationId.current) animationId.current = requestAnimationFrame(animate);
 		};
 
 		const stop = () => {
@@ -222,5 +235,5 @@ export const useNodeGraph = (
 			window.removeEventListener('resize', handleResize);
 			window.removeEventListener('mousemove', handleMouse);
 		};
-	}, [canvasRef, nodeCount, explosionChance]);
+	}, [canvasRef, options.nodeCount, explosionChance]);
 };
