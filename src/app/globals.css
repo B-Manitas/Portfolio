@@ -1,19 +1,25 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
-}
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --primary: #5b8def;
+  --primary-hover: #7faeff;
+  --primary-light: #e8f0ff;
+
+  --black: #171717;
+  --black-light: #333333;
+  --gray-dark: #555555;
+  --gray: #777777;
+  --gray-light: #bbbbbb;
+  --white-light: #f7f7f7;
+  --white: #ffffff;
 }
 
 html,
 body {
   max-width: 100vw;
   overflow-x: hidden;
+  overscroll-behavior: none;
 }
 
 body {
