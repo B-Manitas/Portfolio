@@ -5,11 +5,13 @@ export type TYearBlock = {
 		subtitle?: string;
 		location?: string;
 		description?: string;
-		fullText?: string;
+		fullDescription?: string;
 		type: 'education' | 'internship' | 'job';
 		clickable?: boolean;
-		link?: string;
-		tech?: string[];
+		link: string;
+		linkText?: string;
+		technologies?: string[];
+		duration?: string;
 	}[];
 };
 
@@ -21,5 +23,6 @@ export type TProject = {
 	fullDescription?: string;
 	technologies?: string[];
 	images?: string[];
-	link?: string;
+	link: string;
+	linkText?: string;
 };
