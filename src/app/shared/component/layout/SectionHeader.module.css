@@ -1,0 +1,18 @@
+.header {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.line {
+    width: 70px;
+    height: 4px;
+    background: var(--primary);
+    margin: 0 auto 16px;
+    border-radius: 2px;
+}
+
+.title {
+    font-size: 3rem;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
