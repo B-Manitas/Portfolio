@@ -3,12 +3,12 @@
 import { useState, useRef, useEffect } from 'react';
 import { FaChevronRight } from 'react-icons/fa';
 import styles from './Timeline.module.css';
-import parcours from 'data/parcours.json';
+import background from 'data/background.json';
 import ProjectModal from 'component/modal/ProjectModal';
 import SectionHeader from 'component/layout/SectionHeader';
 import type { TProject, TYearBlock } from 'config/types';
 
-const timelineData = parcours as TYearBlock[];
+const timelineData = background as TYearBlock[];
 
 export default function Background() {
 	const [selectedProject, setSelectedProject] = useState<TProject | null>(null);

@@ -1,0 +1,75 @@
+[
+    {
+        "year": 2020,
+        "items": [
+            {
+                "title": "Baccalauréat Scientifique",
+                "subtitle": "Lycée Antoine de Saint-Exupéry",
+                "type": "education",
+                "description": "Mention Très Bien, spécialité Mathématiques.",
+                "clickable": false
+            }
+        ]
+    },
+    {
+        "year": 2023,
+        "items": [
+            {
+                "title": "Double Licence Mathématiques et Informatique",
+                "subtitle": "Université Paris-Saclay",
+                "type": "education",
+                "clickable": false
+            },
+            {
+                "title": "Stage en Informatique",
+                "subtitle": "CEA",
+                "description": "Développement d’outils d’analyse de données.",
+                "type": "internship",
+                "clickable": true,
+                "link": "https://www.cea.fr/",
+                "linkText": "cea.fr",
+                "fullText": "Description complète du stage à CEA, missions détaillées, technologies, résultats et apprentissages."
+            }
+        ]
+    },
+    {
+        "year": 2024,
+        "items": [
+            {
+                "title": "Master 1 - Data Science",
+                "subtitle": "Université Paris-Saclay",
+                "type": "education"
+            },
+            {
+                "title": "Stage en Data Science",
+                "subtitle": "Enedis",
+                "location": "Paris, France",
+                "type": "internship",
+                "link": "https://www.enedis.fr/",
+                "linkText": "enedis.fr",
+                "description": "Analyse de données pour l’optimisation des réseaux électriques.",
+                "clickable": true
+            }
+        ]
+    },
+    {
+        "year": 2025,
+        "items": [
+            {
+                "title": "Master 2 - Data Science",
+                "subtitle": "Université Paris-Saclay",
+                "type": "education"
+            },
+            {
+                "title": "Stage en Data Science",
+                "subtitle": "E-nno",
+                "location": "Genève, Suisse",
+                "type": "internship",
+                "link": "https://www.e-nno.ch/",
+                "linkText": "e-nno.ch",
+                "description": "Développement de modèles prédictifs pour la gestion énergétique.",
+                "clickable": true
+            }
+        ]
+    }
+]
