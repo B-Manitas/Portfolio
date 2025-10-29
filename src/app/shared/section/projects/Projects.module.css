@@ -126,7 +126,7 @@
     color: var(--white);
 }
 
-@media (max-width: 1023px) {
+@media (max-width: 1024px) {
     .grid {
         grid-template-columns: repeat(2, 1fr);
         gap: 1.75rem;
@@ -145,7 +145,7 @@
     }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
     .grid {
         grid-template-columns: 1fr;
         gap: 1.5rem;
