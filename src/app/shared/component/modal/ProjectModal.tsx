@@ -6,6 +6,7 @@ import { FiExternalLink, FiX } from 'react-icons/fi';
 
 import styles from './ProjectModal.module.css';
 import type { TProject } from 'config/types';
+import ReactMarkdown from 'react-markdown';
 
 interface ProjectModalProps {
 	project: TProject | null;
@@ -35,7 +36,7 @@ const ProjectModal: FC<ProjectModalProps> = ({ project, isOpen, onClose }) => {
 										rel="noopener noreferrer"
 										className={styles.panelLinkTop}
 									>
-										Voir le projet <FiExternalLink />
+										{project?.linkText ? project?.linkText : 'Voir le projet'} <FiExternalLink />
 									</a>
 								)}
 							</div>
@@ -57,10 +58,9 @@ const ProjectModal: FC<ProjectModalProps> = ({ project, isOpen, onClose }) => {
 							</div>
 						)}
 
-						<p className={styles.panelDescription}>
-							{project.fullDescription || project.description}
-						</p>
-
+						<div className={styles.panelDescription}>
+							<ReactMarkdown>{project?.fullDescription || project.description}</ReactMarkdown>
+						</div>
 						{project.images && (
 							<div className={styles.imageGallery}>
 								{project.images.map((src, i) => (

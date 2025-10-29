@@ -17,8 +17,8 @@
 .sidePanel {
     position: fixed;
     top: 0;
-    right: -480px;
-    width: 460px;
+    right: -80vw;
+    width: 80vw;
     height: 100vh;
     background: #fff;
     box-shadow: -4px 0 20px rgba(0, 0, 0, 0.15);
@@ -101,6 +101,17 @@
     margin-bottom: 32px;
 }
 
+.panelDescription h2 {
+    font-size: 1.3rem;
+    margin-top: 1.5rem;
+    margin-bottom: 0.8rem;
+}
+
+.panelDescription ul {
+    padding-left: 1.2rem;
+    margin-bottom: 1rem;
+}
+
 .techListLarge {
     display: flex;
     flex-wrap: wrap;
@@ -133,7 +144,8 @@
 
 @media (max-width: 1023px) {
     .sidePanel {
-        width: 400px;
+        width: 60vw;
+        right: -60vw;
         padding: 32px 28px;
     }
 
