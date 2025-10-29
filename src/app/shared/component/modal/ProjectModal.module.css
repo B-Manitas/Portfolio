@@ -31,12 +31,14 @@
         transform 0.35s ease;
     opacity: 0;
     transform: translateX(20px);
+    pointer-events: none;
 }
 
 .open {
     right: 0;
     opacity: 1;
     transform: translateX(0);
+    pointer-events: auto;
 }
 
 .panelHeader {
