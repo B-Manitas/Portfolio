@@ -16,3 +16,36 @@
     font-weight: 800;
     letter-spacing: 1px;
 }
+
+@media (max-width: 1024px) {
+    .header {
+        margin-bottom: 50px;
+    }
+
+    .line {
+        width: 60px;
+        height: 3px;
+        margin-bottom: 14px;
+    }
+
+    .title {
+        font-size: 2.25rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .header {
+        margin-bottom: 40px;
+    }
+
+    .line {
+        width: 50px;
+        height: 3px;
+        margin-bottom: 12px;
+    }
+
+    .title {
+        font-size: 1.75rem;
+        letter-spacing: 0.5px;
+    }
+}
