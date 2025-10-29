@@ -46,22 +46,22 @@
   color: var(--primary);
 }
 
-/* Responsive */
 @media (max-width: 1024px) {
+  .header {
+    padding: 20px 30px;
+  }
+
   .nav {
     gap: 30px;
+  }
+
+  .nav a {
+    font-size: 1rem;
   }
 }
 
 @media (max-width: 768px) {
-  .container {
-    flex-direction: column;
-    gap: 15px;
-  }
-
-  .nav {
-    position: static;
-    transform: none;
-    gap: 20px;
+  .header {
+    display: none;
   }
 }
