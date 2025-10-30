@@ -10,7 +10,7 @@ export default function Footer() {
 
 			<div className={styles.content}>
 				<p className={styles.text}>
-					Vous souhaitez collaborer, échanger sur un projet ou en savoir plus sur mon travail ?
+					Interested in collaborating, discussing a project, or learning more about my work?
 				</p>
 
 				<a href={`mailto:${LINKS.EMAIL}`} className={styles.mail}>
@@ -28,7 +28,7 @@ export default function Footer() {
 			</div>
 
 			<div className={styles.bottom}>
-				<p>© {new Date().getFullYear()} B-Manitas. Tous droits réservés.</p>
+				<p>© {new Date().getFullYear()} B-Manitas. All rights reserved.</p>
 			</div>
 		</footer>
 	);
