@@ -1,0 +1,102 @@
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 6rem 8vw;
+    background-color: #fff;
+    min-height: 100vh;
+    gap: 4rem;
+}
+
+.left {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 2;
+}
+
+.title {
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    line-height: 1.1;
+    color: #111;
+}
+
+.catchline {
+    font-size: 1.25rem;
+    color: #555;
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+}
+
+.badge {
+    display: inline-block;
+    width: fit-content;
+    background-color: #e0f0ff;
+    color: #1a73e8;
+    padding: 0.3rem 0.7rem;
+    border-radius: 20px;
+    font-weight: 500;
+    font-size: 0.875rem;
+    margin-bottom: 2rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.badge a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.badge:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.socials {
+    display: flex;
+    gap: 1.5rem;
+    font-size: 1.3rem;
+    color: var(--primary);
+}
+
+.socials a {
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.socials a:hover {
+    transform: translateY(-3px) scale(1.1);
+    color: var(--primary-hover);
+}
+
+.right {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image {
+    border-radius: 1.5rem;
+    box-shadow: 0 0.75rem 2rem rgba(0, 0, 0, 0.12);
+    object-fit: cover;
+    max-height: 400px;
+    /* limite la hauteur */
+}
+
+@media (max-width: 1024px) {
+    .hero {
+        flex-direction: column-reverse;
+        text-align: center;
+        padding: 4rem 4vw;
+    }
+
+    .right {
+        margin-bottom: 2rem;
+    }
+
+    .image {
+        max-height: 300px;
+    }
+}
