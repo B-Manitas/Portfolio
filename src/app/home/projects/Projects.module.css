@@ -126,6 +126,43 @@
     color: var(--white);
 }
 
+.altairHighlight {
+    margin-top: 6rem;
+    display: flex;
+    justify-content: center;
+}
+
+.altairCard {
+    all: unset;
+    display: block;
+    background: linear-gradient(135deg, var(--primary), var(--primary-hover));
+    color: var(--white);
+    padding: 2rem;
+    border-radius: 1.25rem;
+    max-width: 700px;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-decoration: none;
+}
+
+.altairCard:hover {
+    transform: translateY(-0.5rem);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+}
+
+.altairContent h3 {
+    font-size: 1.75rem;
+    margin-bottom: 0.75rem;
+    font-weight: 700;
+}
+
+.altairContent p {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+
 @media (max-width: 1024px) {
     .grid {
         grid-template-columns: repeat(2, 1fr);
