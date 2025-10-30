@@ -1,6 +1,6 @@
 import Header from 'src/app/shared/section/header/Header';
 import Hero from './section/hero/Hero';
-import Stats from './section/overview/Overview';
+import Overview from './section/overview/Overview';
 import Idea from './section/idea/Idea';
 import Prototyping from './section/prototyping/Prototyping';
 import Management from './section/management/Management';
@@ -11,7 +11,7 @@ export default function AltairGym() {
 		<>
 			<Header />
 			<Hero />
-			<Stats />
+			<Overview />
 			<Idea />
 			<Prototyping />
 			<Management />

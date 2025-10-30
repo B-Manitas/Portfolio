@@ -17,7 +17,7 @@ const steps = [
 	{
 		title: 'Mobile app',
 		desc: 'Development of an iOS and Android app to collect, visualize, and analyze data from the bracelet, with full deployment to the app stores.',
-		tech: ['React Native', 'Contentful', 'Firebase', 'Supabase'],
+		tech: ['React Native', 'Contentful', 'Supabase'],
 		image: app,
 	},
 	{
