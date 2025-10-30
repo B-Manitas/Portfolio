@@ -3,6 +3,21 @@
         "category": "Data Science",
         "projects": [
             {
+                "id": 6,
+                "title": "Altair Gym – Motion Analysis",
+                "date": "2025",
+                "description": "Analyzes multivariate time series from wearable sensors to detect and quantify repetitive exercise movements, using both physics-based methods and deep learning approaches.",
+                "link": "https://get-altair.com",
+                "technologies": [
+                    "Python",
+                    "TensorFlow",
+                    "GCP",
+                    "SciPy",
+                    "Git"
+                ],
+                "fullDescription": "This project focuses on analyzing **wearable sensor data** collected during gym exercises, aiming to detect **repetitive movement patterns** in multivariate time series (accelerometer and gyroscope data along x, y, z axes).\n\nTwo main approaches were explored:\n\n**1. Physics-based approach:** Direct analysis of the time series using **SciPy** to extract features such as peaks, frequencies, and repetitions, allowing precise identification of movement patterns.\n\n**2. Deep learning approach:** Development of **convolutional neural networks (CNNs)** using **TensorFlow** to automatically detect patterns and classify exercise repetitions from the sensor data.\n\nThe workflow also involved **data preprocessing** with **NumPy and Pandas**, handling missing values, normalization, and synchronization of multivariate signals. Experiments were conducted on **Google Cloud Platform virtual machines** for computational efficiency, and all work was version-controlled with **Git**.\n\nThis project demonstrates a combination of **data-driven AI methods** and **physics-based analysis** to provide accurate and interpretable insights into exercise performance."
+            },
+            {
                 "id": 5,
                 "title": "Image classification of Jupyter's atmosphere",
                 "date": "2024",
@@ -82,6 +97,49 @@
         "category": "Full Stack",
         "projects": [
             {
+                "id": 5,
+                "title": "Altair Gym – Mobile App",
+                "date": "2025",
+                "description": "Cross-platform mobile application for Altair Gym (iOS & Android) to track workouts, connect BLE bracelets, and manage content via a CMS and cloud backend.",
+                "link": "https://apps.apple.com/fr/app/altair-gym/id6738797742",
+                "technologies": [
+                    "React Native",
+                    "Supabase",
+                    "Contentful",
+                    "BLE"
+                ],
+                "fullDescription": "This project is a **cross-platform mobile application** for **Altair Gym**, available on **iOS and Android**. The app enables users to **track their workouts**, connect with **BLE bracelets** for motion tracking, and access **dynamic content** managed via **Contentful CMS**.\n\nInitially, **Firebase** was used for backend services, but the app was migrated to **Supabase** for authentication, database management, and real-time updates.\n\n**Key features:**\n- **Cross-platform support:** works seamlessly on both iOS and Android.\n- **BLE connectivity:** connects with Altair Gym bracelets to capture and analyze workout movements.\n- **Content management:** dynamic content powered by Contentful, allowing easy updates without redeploying the app.\n- **Backend and database:** Supabase handles user data, authentication, and workout tracking.\n- **App deployment:** available on **Play Store** and **App Store** with proper CI/CD and version management.\n\nThis project highlights a **modern mobile development stack**, integrating **hardware devices**, **cloud backend**, and **CMS-driven content** for an engaging user experience.",
+                "images": [
+                    "/images/projects/altair-app/2.png",
+                    "/images/projects/altair-app/3.png",
+                    "/images/projects/altair-app/4.png",
+                    "/images/projects/altair-app/5.png",
+                    "/images/projects/altair-app/6.png",
+                    "/images/projects/altair-app/7.png"
+                ]
+            },
+            {
+                "id": 4,
+                "title": "Altair Gym – Marketing Website",
+                "date": "2025",
+                "description": "Responsive marketing website for Altair Gym, showcasing the product, managing newsletter subscriptions, and leveraging modern deployment and CI/CD workflows.",
+                "link": "https://get-altair.com",
+                "technologies": [
+                    "Next.js",
+                    "pnpm",
+                    "Supabase",
+                    "Vercel",
+                    "CI/CD"
+                ],
+                "fullDescription": "This project consists of a **responsive marketing website** for **Altair Gym**, deployed on **Vercel**. The website presents the **product**, its **features**, and allows visitors to **subscribe to newsletters** managed via **Supabase**.\n\nThe development used a **monorepo architecture** with **pnpm**, ensuring efficient dependency management and scalability.\n\n**Key features:**\n- **Responsive design:** optimized for desktop, tablet, and mobile.\n- **Newsletter subscription:** integrated with Supabase for secure and efficient user management.\n- **CI/CD pipeline:** continuous integration and deployment to Vercel, enabling fast updates and version control.\n- **Modern frontend stack:** built with Next.js for optimal performance and SEO.\n\nThis project demonstrates a combination of **full-stack development practices**, **modern deployment workflows**, and **user engagement features** for a tech product launch.",
+                "images": [
+                    "/images/projects/altair-web/1.png",
+                    "/images/projects/altair-web/2.png",
+                    "/images/projects/altair-web/3.png",
+                    "/images/projects/altair-web/4.png"
+                ]
+            },
+            {
                 "id": 3,
                 "title": "Boat Booking Platform",
                 "date": "2025",
@@ -91,7 +149,13 @@
                     "Supabase",
                     "PostgreSQL"
                 ],
-                "fullDescription": "Web platform for **booking boats online** in France. **Clients** can **search** for **available rentals** in a region and **book** directly online, while **agency owners** can manage their **boats**, **employees**, and **reservations**. The project was completed as part of a **freelance mission**, with special attention to **security**, **reliability**, and **user experience**.\n\n**Features**:\n- **Search and booking for clients**: search by region, filter by boat type, capacity, and amenities, simple and fast online booking.\n- **Agency management for owners**: create and manage rental agencies, track boats and employees.\n- **Boat management**: add, modify, and remove boats for rental, track availability and detailed characteristics.\n- **Reservation management**: view and track past and upcoming reservations, notifications for clients and owners.\n- **Intuitive dashboard**: clear and responsive interface to easily manage all aspects of rentals, for both clients and owners."
+                "fullDescription": "Web platform for **booking boats online** in France. **Clients** can **search** for **available rentals** in a region and **book** directly online, while **agency owners** can manage their **boats**, **employees**, and **reservations**. The project was completed as part of a **freelance mission**, with special attention to **security**, **reliability**, and **user experience**.\n\n**Features**:\n- **Search and booking for clients**: search by region, filter by boat type, capacity, and amenities, simple and fast online booking.\n- **Agency management for owners**: create and manage rental agencies, track boats and employees.\n- **Boat management**: add, modify, and remove boats for rental, track availability and detailed characteristics.\n- **Reservation management**: view and track past and upcoming reservations, notifications for clients and owners.\n- **Intuitive dashboard**: clear and responsive interface to easily manage all aspects of rentals, for both clients and owners.",
+                "images": [
+                    "/images/projects/seascape/1.png",
+                    "/images/projects/seascape/2.png",
+                    "/images/projects/seascape/3.png",
+                    "/images/projects/seascape/4.png"
+                ]
             },
             {
                 "id": 2,
@@ -124,13 +188,33 @@
                     "Spotify API",
                     "Redux"
                 ],
-                "fullDescription": "**Time's App** is a **fitness application** designed to help you **plan and manage your workouts efficiently**.\nWith its **intuitive interface** and **easy-to-use features**, you can **create customized exercise sequences** and **set specific time durations** for each activity.\nAdditionally, the app comes with a **program planning system** that enables you to **schedule your workouts in advance**, so you never miss a session.\nWhether you're a **beginner** or a **fitness enthusiast**, **Time's App** can help you **achieve your fitness goals** with ease."
+                "fullDescription": "**Time's App** is a **fitness application** designed to help you **plan and manage your workouts efficiently**.\nWith its **intuitive interface** and **easy-to-use features**, you can **create customized exercise sequences** and **set specific time durations** for each activity.\nAdditionally, the app comes with a **program planning system** that enables you to **schedule your workouts in advance**, so you never miss a session.\nWhether you're a **beginner** or a **fitness enthusiast**, **Time's App** can help you **achieve your fitness goals** with ease.",
+                "images": [
+                    "https://raw.githubusercontent.com/B-Manitas/Times-App/refs/heads/main/assets/screenshot/workout.gif",
+                    "https://raw.githubusercontent.com/B-Manitas/Times-App/refs/heads/main/assets/screenshot/img_1.jpg",
+                    "https://raw.githubusercontent.com/B-Manitas/Times-App/refs/heads/main/assets/screenshot/img_2.jpg",
+                    "https://raw.githubusercontent.com/B-Manitas/Times-App/refs/heads/main/assets/screenshot/img_3.jpg"
+                ]
             }
         ]
     },
     {
         "category": "Software",
         "projects": [
+            {
+                "id": 8,
+                "title": "Altair Gym – BLE Bracelet Firmware",
+                "date": "2025",
+                "description": "Embedded firmware for Altair Gym bracelets, handling sensor data acquisition, BLE transmission, battery management, and device power states efficiently.",
+                "technologies": [
+                    "Arduino",
+                    "Embedded Systems",
+                    "BLE",
+                    "Battery Management",
+                    "Microcontrollers"
+                ],
+                "fullDescription": "This project involves developing the **firmware** for the **Altair Gym BLE bracelets**, designed to reliably collect and transmit **sensor data** (accelerometer and gyroscope) to connected devices such as **smartphones or computers**.\n\n**Key functionalities:**\n- **BLE communication:** transmits real-time motion data to the connected app, optimized to minimize energy consumption.\n- **Battery management:** monitors battery level and transmits status updates to the interface, ensuring safe operation.\n- **Power state management:** handles turning the device **on and off**, and managing sleep/wake modes to extend battery life.\n- **Optimization for low power consumption:** firmware is designed to reduce energy usage while maintaining accurate data acquisition and transmission.\n\nThis firmware combines **embedded systems expertise**, **efficient BLE communication**, and **battery-aware programming** to create a responsive and energy-efficient wearable device for fitness tracking."
+            },
             {
                 "id": 7,
                 "title": "3D Ulam Spiral",
