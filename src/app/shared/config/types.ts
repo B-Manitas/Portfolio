@@ -25,5 +25,9 @@ export type TProject = {
 	images?: string[];
 	link?: string;
 	linkText?: string;
-	localPreviewImages?: string[];
+};
+
+export type TProjectGroup = {
+	category: string;
+	projects: TProject[];
 };
