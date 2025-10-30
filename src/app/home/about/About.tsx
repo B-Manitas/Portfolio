@@ -23,13 +23,13 @@ export default function About() {
 	}, []);
 
 	const projectCount = useMemo(() => {
-		return projects.reduce((acc, group) => acc + group.projects.length, 0);
+		return projects.reduce((acc, group) => acc + group.projects.length, 0) - 1; // Exclude Altair Gym
 	}, []);
 
 	const stats = [
 		{ label: 'Projects', value: `+ ${projectCount}` },
-		{ label: 'Exp. Python', value: '8 ans' },
-		{ label: 'Exp. React', value: '3 ans' },
+		{ label: 'Exp. Python', value: '8 yrs' },
+		{ label: 'Exp. React', value: '3 yrs' },
 	];
 
 	return (
