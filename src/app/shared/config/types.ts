@@ -23,6 +23,7 @@ export type TProject = {
 	fullDescription?: string;
 	technologies?: string[];
 	images?: string[];
-	link: string;
+	link?: string;
 	linkText?: string;
+	localPreviewImages?: string[];
 };
