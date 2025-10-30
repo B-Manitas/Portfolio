@@ -181,7 +181,7 @@
                     "C++",
                     "SFML"
                 ],
-                "fullDescription": "**Password Manager**\nA command line application, developed with Python3, to manage your passwords.\n\n**Controls**\n- insert => to register a new password.\n- modify => to modify an existing password.\n- delete => to delete an existing password.\n- search => to display information from a single site.\n- search_all => to display informations from all sites."
+                "fullDescription": "**Password Manager**\nA command line application, developed with Python3, to manage your passwords.\n\n**Controls**\n- insert : to register a new password.\n- modify : to modify an existing password.\n- delete : to delete an existing password.\n- search : to display information from a single site.\n- search_all : to display informations from all sites."
             },
             {
                 "id": 3,
@@ -242,7 +242,10 @@
                     "Unity",
                     "C#"
                 ],
-                "fullDescription": "This project is a **Unity-based platformer game** featuring **multiple maps**, **various characters**, **challenging obstacles**, and an **in-game store**, offering an engaging experience that tests players' **skills** and **reflexes** while providing hours of **entertainment**.\n\nThe game requires players to navigate each level carefully, avoid **dangerous obstacles** and **enemies**, and collect **coins** to unlock and purchase **new characters**."
+                "fullDescription": "This project is a **Unity-based platformer game** featuring **multiple maps**, **various characters**, **challenging obstacles**, and an **in-game store**, offering an engaging experience that tests players' **skills** and **reflexes** while providing hours of **entertainment**.\n\nThe game requires players to navigate each level carefully, avoid **dangerous obstacles** and **enemies**, and collect **coins** to unlock and purchase **new characters**.",
+                "images": [
+                    "/images/projects/chrobot.png"
+                ]
             },
             {
                 "id": 1,
