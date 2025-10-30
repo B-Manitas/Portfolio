@@ -1,9 +1,9 @@
-import Header from 'section/header/Header';
-import Hero from 'section/hero/Hero';
-import Background from 'section/background/Background';
-import Projects from 'section/projects/Projects';
-import Footer from 'section/footer/Footer';
-import About from './shared/section/about/About';
+import Header from 'shared/section/header/Header';
+import Hero from 'home/hero/Hero';
+import About from 'home/about/About';
+import Background from 'home/background/Background';
+import Projects from 'home/projects/Projects';
+import Footer from 'shared/section/footer/Footer';
 
 export default function Home() {
 	return (
