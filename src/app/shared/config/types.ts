@@ -25,6 +25,7 @@ export type TProject = {
 	images?: string[];
 	link?: string;
 	linkText?: string;
+	page?: string;
 };
 
 export type TProjectGroup = {
