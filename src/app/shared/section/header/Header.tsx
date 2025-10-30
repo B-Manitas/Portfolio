@@ -3,9 +3,12 @@
 import { useState, useEffect, useCallback } from 'react';
 import Link from 'next/link';
 import styles from './Header.module.css';
+import { usePathname, useRouter } from 'next/navigation';
 
 export default function Header() {
 	const [scrolled, setScrolled] = useState(false);
+	const router = useRouter();
+	const pathname = usePathname();
 
 	const handleScroll = useCallback(() => {
 		setScrolled(window.scrollY > 50);
@@ -18,6 +21,12 @@ export default function Header() {
 
 	const handleSmoothScroll = (id: string) => (e: React.MouseEvent<HTMLAnchorElement>) => {
 		e.preventDefault();
+
+		if (pathname !== '/' && id !== 'contact') {
+			router.push(`/#${id}`);
+			return;
+		}
+
 		const section = document.getElementById(id);
 		if (section) section.scrollIntoView({ behavior: 'smooth' });
 	};
@@ -27,11 +36,15 @@ export default function Header() {
 			<div className={styles.container}>
 				<nav className={styles.nav}>
 					<Link href="#about" onClick={handleSmoothScroll('about')}>
-						Mon parcours
+						About
+					</Link>
+					<Link href="#background" onClick={handleSmoothScroll('background')}>
+						Journey
 					</Link>
 					<Link href="#projects" onClick={handleSmoothScroll('projects')}>
-						Mes projets
+						Portfolio
 					</Link>
+					<Link href="/altair-gym">Altair Gym</Link>
 					<Link href="#contact" onClick={handleSmoothScroll('contact')}>
 						Contact
 					</Link>
