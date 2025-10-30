@@ -23,6 +23,9 @@
       }
     ],
     "paths": {
+      "public/*": [
+        "./public/*"
+      ],
       "src/*": [
         "./src/*"
       ],
@@ -35,8 +38,11 @@
       "component/*": [
         "./src/app/shared/component/*"
       ],
-      "section/*": [
-        "./src/app/shared/section/*"
+      "altair-gym/*": [
+        "./src/app/altair-gym/*"
+      ],
+      "home/*": [
+        "./src/app/home/*"
       ],
       "config/*": [
         "./src/app/shared/config/*"
