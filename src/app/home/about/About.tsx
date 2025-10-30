@@ -3,9 +3,10 @@
 import { useMemo } from 'react';
 import SectionHeader from 'component/layout/SectionHeader';
 import styles from './About.module.css';
+import projects from 'data/projects.json';
 
 export default function About() {
-	const birthDate = new Date(2002, 5, 27); // Juin = 5
+	const birthDate = new Date(2002, 5, 27);
 
 	const age = useMemo(() => {
 		const today = new Date();
@@ -19,10 +20,14 @@ export default function About() {
 		return calculatedAge;
 	}, [birthDate]);
 
+	const projectCount = useMemo(() => {
+		return projects.reduce((acc, group) => acc + group.projects.length, 0);
+	}, []);
+
 	const stats = [
-		{ label: 'Projects', value: '12+' },
-		{ label: 'Python', value: '8 ans' },
-		{ label: 'React', value: '3 ans' },
+		{ label: 'Projects', value: `+ ${projectCount}` },
+		{ label: 'Exp. Python', value: '8 ans' },
+		{ label: 'Exp. React', value: '3 ans' },
 	];
 
 	return (
