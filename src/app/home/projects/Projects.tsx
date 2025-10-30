@@ -9,7 +9,7 @@ import styles from './Projects.module.css';
 import type { TProject, TProjectGroup } from 'config/types';
 
 const projectsData = projectsJSON as TProjectGroup[];
-const ALL = 'Tous';
+const ALL = 'All';
 
 export default function Projects() {
 	const [activeCategory, setActiveCategory] = useState(ALL);
@@ -34,7 +34,7 @@ export default function Projects() {
 
 	return (
 		<section className={styles.section} id="projects">
-			<SectionHeader title="Projets & Réalisations" className={styles.sectionHeader} />
+			<SectionHeader title="Portfolio" className={styles.sectionHeader} />
 
 			<div className={styles.filters}>
 				{categories.map((cat) => (
