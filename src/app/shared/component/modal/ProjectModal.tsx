@@ -86,9 +86,8 @@ const ProjectModal: FC<ProjectModalProps> = ({ project, isOpen, onClose }) => {
 										<Image
 											src={src}
 											alt={`${project.title} image ${i + 1}`}
-											width={600}
-											height={300}
-											style={{ objectFit: 'contain' }}
+											fill
+											style={{ objectFit: 'contain', width: '100%', height: '100%' }}
 										/>
 									</div>
 								))}

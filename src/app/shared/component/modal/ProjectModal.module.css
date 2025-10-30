@@ -143,14 +143,12 @@
     position: relative;
     width: 100%;
     aspect-ratio: 16 / 9;
-}
-
-.imageWrapper img {
+    overflow: hidden;
     border-radius: 8px;
     border: 1px solid var(--white-light);
 }
 
-@media (max-width: 1023px) {
+@media (max-width: 1024px) {
     .sidePanel {
         width: 60vw;
         right: -60vw;
@@ -169,9 +167,14 @@
         font-size: 0.8rem;
         padding: 5px 10px;
     }
+
+    .imageGallery {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
     .sidePanel {
         right: 0;
         width: 100%;
