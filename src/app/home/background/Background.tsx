@@ -36,7 +36,7 @@ export default function Background() {
 
 	return (
 		<section className={styles.timelineSection} ref={sectionRef} id="journey">
-			<SectionHeader title="Parcours & Expériences" className={styles.sectionHeader} />
+			<SectionHeader title="Education & Career" className={styles.sectionHeader} />
 
 			<div className={styles.timelineContainer} ref={timelineRef}>
 				<div className={styles.timeline}>
