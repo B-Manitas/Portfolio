@@ -3,11 +3,12 @@
 import { useState, useEffect, useMemo } from 'react';
 import { FiChevronRight } from 'react-icons/fi';
 import ProjectModal from 'component/modal/ProjectModal';
-import projectsData from 'data/projects.json';
+import projectsJSON from 'data/projects.json';
 import SectionHeader from 'component/layout/SectionHeader';
 import styles from './Projects.module.css';
-import type { TProject } from 'config/types';
+import type { TProject, TProjectGroup } from 'config/types';
 
+const projectsData = projectsJSON as TProjectGroup[];
 const ALL = 'Tous';
 
 export default function Projects() {
