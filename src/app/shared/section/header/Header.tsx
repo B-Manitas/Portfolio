@@ -39,7 +39,7 @@ export default function Header() {
 						About
 					</Link>
 					<Link href="#journey" onClick={handleSmoothScroll('journey')}>
-						Education & Career
+						Career
 					</Link>
 					<Link href="#projects" onClick={handleSmoothScroll('projects')}>
 						Portfolio

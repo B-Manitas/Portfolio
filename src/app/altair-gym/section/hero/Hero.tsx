@@ -41,7 +41,12 @@ export default function Hero() {
 			</div>
 
 			<div className={styles.right}>
-				<Image src={heroImage} alt="Altair Gym" width={700} height={394} className={styles.image} />
+				<Image
+					src={heroImage}
+					alt="Altair Gym"
+					className={styles.image}
+					style={{ width: '100%', height: 'auto' }}
+				/>
 			</div>
 		</section>
 	);

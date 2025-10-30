@@ -1,9 +1,10 @@
 .hero {
     display: flex;
+    flex-direction: row;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     padding: 6rem 8vw;
-    background-color: #fff;
+    background-color: var(--background);
     min-height: 100vh;
     gap: 4rem;
 }
@@ -34,8 +35,8 @@
 .badge {
     display: inline-block;
     width: fit-content;
-    background-color: #e0f0ff;
-    color: #1a73e8;
+    background-color: var(--primary-light);
+    color: var(--primary);
     padding: 0.3rem 0.7rem;
     border-radius: 20px;
     font-weight: 500;
@@ -81,22 +82,77 @@
     border-radius: 1.5rem;
     box-shadow: 0 0.75rem 2rem rgba(0, 0, 0, 0.12);
     object-fit: cover;
-    max-height: 400px;
-    /* limite la hauteur */
+    width: 100%;
+    max-width: 500px;
+    height: auto;
 }
 
 @media (max-width: 1024px) {
     .hero {
-        flex-direction: column-reverse;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 4rem 6vw;
+        gap: 2.5rem;
+    }
+
+    .left {
+        align-items: center;
         text-align: center;
-        padding: 4rem 4vw;
     }
 
     .right {
-        margin-bottom: 2rem;
+        width: 80%;
     }
 
     .image {
-        max-height: 300px;
+        max-height: 50vh;
+        width: 80%;
+        height: auto;
+    }
+
+    .title {
+        font-size: 3rem;
+    }
+
+    .catchline {
+        font-size: 1.125rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 3rem 5vw;
+        gap: 2rem;
+        min-height: 100vh;
+    }
+
+    .left {
+        align-items: center;
+        text-align: center;
+    }
+
+    .right {
+        width: 90%;
+        align-items: flex-start;
+        justify-content: center;
+    }
+
+    .image {
+        width: 100%;
+        max-height: 40vh;
+        height: auto;
+        margin-top: 0;
+    }
+
+    .title {
+        font-size: 2.25rem;
+    }
+
+    .catchline {
+        font-size: 1rem;
     }
 }
