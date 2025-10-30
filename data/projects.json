@@ -343,5 +343,17 @@
                 "fullDescription": "This Unity game is a **simplistic general knowledge quiz**. Players are given **60 seconds** to answer as many questions as possible.\n\nOnce the time runs out, a menu appears showing the player's **score** for the game, as well as the **best score** to challenge.\n\nThe game provides an **engaging** and **time-limited experience** where players can test their **knowledge across various categories**. It offers a **quick** and **entertaining** way to challenge oneself and compete for the **highest score**. Whether you're looking to have fun or improve your general knowledge, this quiz game is a **great choice**."
             }
         ]
+    },
+    {
+        "category": "Entrepreneurship",
+        "projects": [
+            {
+                "id": "altair-gym",
+                "title": "Altair Gym",
+                "description": "A fitness solution combining wearable technology and mobile applications to enhance workout experiences through motion tracking and personalized feedback.",
+                "date": "2025",
+                "page": "/altair-gym"
+            }
+        ]
     }
 ]
