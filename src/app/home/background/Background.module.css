@@ -2,7 +2,7 @@
   position: relative;
   width: 100%;
   min-height: 100vh;
-  background: linear-gradient(120deg, #f6f9fc, #e8f0ff);
+  background: var(--background-blue);
   display: flex;
   flex-direction: column;
   justify-content: center;

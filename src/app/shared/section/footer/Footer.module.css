@@ -1,6 +1,6 @@
 .section {
     padding: 100px 8vw 60px;
-    background: linear-gradient(120deg, #f6f9fc, #e8f0ff);
+    background: var(--background-blue);
 }
 
 .header {

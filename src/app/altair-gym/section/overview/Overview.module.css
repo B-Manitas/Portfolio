@@ -1,13 +1,13 @@
 .overviewSection {
 	padding: 6rem 8vw;
-	background-color: #f6f9fc;
+	background: var(--background-blue);
 	text-align: center;
 }
 
 .intro {
 	font-size: 1.125rem;
 	line-height: 1.6;
-	color: #555;
+	color: var(--gray);
 	margin-bottom: 3rem;
 }
 
@@ -19,7 +19,7 @@
 }
 
 .card {
-	background-color: #fff;
+	background-color: var(--white);
 	padding: 1.5rem 2rem;
 	border-radius: 1rem;
 	box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.08);
@@ -37,7 +37,7 @@
 
 .icon {
 	font-size: 2rem;
-	color: #1a73e8;
+	color: var(--primary);
 }
 
 .info {
@@ -48,18 +48,10 @@
 	display: block;
 	font-size: 1.25rem;
 	font-weight: 600;
-	color: #111;
 }
 
 .label {
 	display: block;
 	font-size: 0.875rem;
-	color: #555;
-}
-
-@media (max-width: 1024px) {
-	.grid {
-		flex-direction: column;
-		align-items: center;
-	}
+	color: var(--gray);
 }
