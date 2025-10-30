@@ -3,11 +3,13 @@
 import { useMemo } from 'react';
 import SectionHeader from 'component/layout/SectionHeader';
 import styles from './About.module.css';
-import projects from 'data/projects.json';
+import projectsJSON from 'data/projects.json';
+import type { TProjectGroup } from 'src/app/shared/config/types';
+
+const projects = projectsJSON as TProjectGroup[];
+const birthDate = new Date(2002, 5, 27);
 
 export default function About() {
-	const birthDate = new Date(2002, 5, 27);
-
 	const age = useMemo(() => {
 		const today = new Date();
 		let calculatedAge = today.getFullYear() - birthDate.getFullYear();
@@ -18,7 +20,7 @@ export default function About() {
 			calculatedAge--;
 		}
 		return calculatedAge;
-	}, [birthDate]);
+	}, []);
 
 	const projectCount = useMemo(() => {
 		return projects.reduce((acc, group) => acc + group.projects.length, 0);
