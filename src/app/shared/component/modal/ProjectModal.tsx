@@ -1,6 +1,6 @@
 'use client';
 
-import type { FC } from 'react';
+import { useEffect, type FC } from 'react';
 import Image from 'next/image';
 import { FiExternalLink, FiX } from 'react-icons/fi';
 
@@ -15,6 +15,17 @@ interface ProjectModalProps {
 }
 
 const ProjectModal: FC<ProjectModalProps> = ({ project, isOpen, onClose }) => {
+	useEffect(() => {
+		if (!isOpen) return;
+
+		const handleKeyDown = (e: KeyboardEvent) => {
+			if (e.key === 'Escape') onClose();
+		};
+
+		window.addEventListener('keydown', handleKeyDown);
+		return () => window.removeEventListener('keydown', handleKeyDown);
+	}, [isOpen, onClose]);
+
 	return (
 		<>
 			<button
@@ -59,19 +70,27 @@ const ProjectModal: FC<ProjectModalProps> = ({ project, isOpen, onClose }) => {
 						)}
 
 						<div className={styles.panelDescription}>
-							<ReactMarkdown>{project?.fullDescription || project.description}</ReactMarkdown>
+							{(project?.fullDescription || project.description || '')
+								.split('\n\n')
+								.map((paragraph, i) => (
+									// biome-ignore lint/suspicious/noArrayIndexKey: i is acceptable here
+									<ReactMarkdown key={i}>{paragraph}</ReactMarkdown>
+								))}
 						</div>
+
 						{project.images && (
 							<div className={styles.imageGallery}>
 								{project.images.map((src, i) => (
-									<Image
-										key={src}
-										src={src}
-										alt={`${project.title} image ${i + 1}`}
-										className={styles.image}
-										width={600}
-										height={300}
-									/>
+									// biome-ignore lint/suspicious/noArrayIndexKey: i is acceptable here
+									<div key={i} className={styles.imageWrapper}>
+										<Image
+											src={src}
+											alt={`${project.title} image ${i + 1}`}
+											width={600}
+											height={300}
+											style={{ objectFit: 'contain' }}
+										/>
+									</div>
 								))}
 							</div>
 						)}
