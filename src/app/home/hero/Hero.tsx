@@ -49,7 +49,7 @@ export default function Hero() {
 				<h1 className={styles.name}>{typedName}</h1>
 				<p className={styles.role}>Data Scientist</p>
 				<p className={styles.quote}>
-					<em>“La connaissance est limitée, l’imagination est infinie.”</em>
+					<em>“They did not know it was impossible, so they did it.”</em>
 				</p>
 			</div>
 
