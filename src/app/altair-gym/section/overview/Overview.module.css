@@ -55,3 +55,55 @@
 	font-size: 0.875rem;
 	color: var(--gray);
 }
+
+@media (max-width: 1024px) {
+	.grid {
+		gap: 2rem;
+		justify-content: center;
+	}
+
+	.card {
+		min-width: 220px;
+		padding: 1.5rem 1.75rem;
+	}
+
+	.icon {
+		font-size: 2rem;
+	}
+
+	.value {
+		font-size: 1.25rem;
+	}
+
+	.label {
+		font-size: 0.875rem;
+	}
+}
+
+@media (max-width: 768px) {
+	.grid {
+		flex-direction: column;
+		align-items: center;
+		gap: 1.5rem;
+	}
+
+	.card {
+		width: 90%;
+		min-width: unset;
+		padding: 1.25rem 1.5rem;
+		flex-direction: row;
+		justify-content: flex-start;
+	}
+
+	.icon {
+		font-size: 1.75rem;
+	}
+
+	.value {
+		font-size: 1.125rem;
+	}
+
+	.label {
+		font-size: 0.875rem;
+	}
+}
