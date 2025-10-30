@@ -1,0 +1,260 @@
+[
+    {
+        "category": "Data Science",
+        "projects": [
+            {
+                "id": 5,
+                "title": "Image classification of Jupyter's atmosphere",
+                "date": "2024",
+                "description": "Classifies five atmospheric patterns on Jupiter using unsupervised KMeans preprocessing and a One Versus Rest random forest model.",
+                "link": "https://github.com/B-Manitas/Jupiter-Atmosphere",
+                "technologies": [
+                    "Python",
+                    "Scikit-Learn",
+                    "Pandas",
+                    "NumPy"
+                ],
+                "fullDescription": "This project explores recognizing patterns in **Jupiter's atmosphere**. Hosted by the University Paris-Saclay, Telecom Paris, and Ecole Polytechnique, the objective is to classify **five different atmospheric patterns** of Jupiter.\n\nThe preprocessing phase involves dividing the images into segments using the **unsupervised KMeans model**, based on grouping similar pixels together, simplifying subsequent analysis.\n\nIn model construction, a **One Versus Rest** approach with a **random forest model** is employed, with each classifier fine-tuned to determine image class accurately.",
+                "images": [
+                    "https://raw.githubusercontent.com/ramp-kits/hotjupiter/main/img/patterns.png"
+                ]
+            },
+            {
+                "id": 4,
+                "title": "Classifying AI-generated text",
+                "date": "2024",
+                "description": "Capable of distinguishing AI-generated from human-written text, using advanced preprocessing and an optimized classifier for reliable accuracy.",
+                "link": "https://github.com/B-Manitas/NLP-AI-Human",
+                "technologies": [
+                    "Python",
+                    "Scikit-Learn",
+                    "NLTK",
+                    "Gensim"
+                ],
+                "fullDescription": "This **Data Science** endeavor centers around the development of a **text classifier** capable of distinguishing between **AI-generated** and **human-written text**. Leveraging a **Kaggle dataset** containing diverse textual data, the project aims to explore the nuances between these two types of content.\n\nThe **preprocessing phase** involves utilizing advanced techniques such as **TF-IDF** and **word2vec embeddings** to transform the raw text into **feature representations** suitable for **machine learning models**. By extracting **semantic relationships** and **contextual information**, these methods enhance the effectiveness of the **classification system**.\n\nThroughout the project, rigorous **experimentation** and **evaluation** of the **classifier** are conducted to assess its performance accurately. Various parameters are **fine-tuned** and **optimized** to enhance the **model's predictive capabilities** and ensure its **reliability** in identifying the origin of text samples."
+            },
+            {
+                "id": 3,
+                "title": "Stock Market Prediction",
+                "date": "2024",
+                "description": "A Random Forest model predicts a company’s Friday stock price using the past four days’ trends, after data cleaning, visualization, and feature preprocessing.",
+                "link": "https://github.com/B-Manitas/StockMarketML",
+                "technologies": [
+                    "Python",
+                    "Scikit-Learn",
+                    "Pandas",
+                    "NumPy"
+                ],
+                "fullDescription": "The goal of this project is to **predict** the **Friday stock market price** of a company based on the **trends of the past 4 days**.\n\nThe project consists of three main steps:\n\n**Data preprocessing:** Cleaning the data by removing **missing values**, replacing **outliers**, and performing **normalization** and **encoding** of variables.\n\n**Data visualization:** Exploring data through **visualizations** to understand **distributions**, analyze **feature relationships**, and determine the **most appropriate model type**.\n\n**Model training:** Using a **Random Forest** algorithm, tuning **hyperparameters** for optimal performance, and evaluating with **MSE** and **MAE** metrics."
+            },
+            {
+                "id": 2,
+                "title": "Data Science library",
+                "date": "2023",
+                "description": "A C++ toolkit for efficient numerical computations, data manipulation, and neural network development.",
+                "link": "https://github.com/B-Manitas/neuralcpp",
+                "technologies": [
+                    "C++",
+                    "CMake",
+                    "OpenMP",
+                    "GoogleTest",
+                    "GoogleBenchmark"
+                ],
+                "fullDescription": "**CMatrix:** A matrix management system specifically designed for performing advanced numerical calculations. CMatrix offers a range of features aimed at simplifying complex mathematical operations involving matrices, providing an efficient solution for computational tasks.\n\n**CDataFrame:** A dataframe manager designed to facilitate the manipulation and analysis of structured data. CDataFrame offers sophisticated functionalities for importing, cleaning, filtering, and analyzing tabular data, enabling smooth and efficient data exploration.\n\n**NeuralCPP:** A specialized library for simplified implementation of neural networks. NeuralCPP offers a comprehensive set of tools and functionalities for designing and training neural network models directly within the C++ environment."
+            },
+            {
+                "id": 1,
+                "title": "Predicting Romantic Matches",
+                "date": "2023",
+                "description": "Predicting whether two individuals can form a couple using a Random Forest model based on their preferences, personality traits, demographics, and optimized hyperparameters.",
+                "link": "https://github.com/B-Manitas/Speed-Dating",
+                "technologies": [
+                    "Python",
+                    "Scikit-Learn",
+                    "Pandas",
+                    "NumPy"
+                ],
+                "fullDescription": "The objective of this project is to predict whether two single individuals can form a **couple** based on their **preferences**, **personality traits**, and other **demographic characteristics**.\n\nThe project is divided into three main steps: **data preprocessing**, **data visualization**, and **model training**:\n\nIn the **data preprocessing** step, we cleaned the data by removing **missing values** and replacing **outliers**. We also performed **normalization** of **numerical variables** and **encoding** of **categorical variables**.\n\nIn the **data visualization** step, we explored the **distribution of data** through **visualizations** to better understand the data distribution and analyze the **relationships** between different features. This helped us determine the most appropriate type of **model**"
+            }
+        ]
+    },
+    {
+        "category": "Full Stack",
+        "projects": [
+            {
+                "id": 3,
+                "title": "Boat Booking Platform",
+                "date": "2025",
+                "description": "Boat booking platform, allowing clients to easily find and reserve boats, and owners to manage their fleets and reservations.",
+                "technologies": [
+                    "Next.js",
+                    "Supabase",
+                    "PostgreSQL"
+                ],
+                "fullDescription": "Web platform for **booking boats online** in France. **Clients** can **search** for **available rentals** in a region and **book** directly online, while **agency owners** can manage their **boats**, **employees**, and **reservations**. The project was completed as part of a **freelance mission**, with special attention to **security**, **reliability**, and **user experience**.\n\n**Features**:\n- **Search and booking for clients**: search by region, filter by boat type, capacity, and amenities, simple and fast online booking.\n- **Agency management for owners**: create and manage rental agencies, track boats and employees.\n- **Boat management**: add, modify, and remove boats for rental, track availability and detailed characteristics.\n- **Reservation management**: view and track past and upcoming reservations, notifications for clients and owners.\n- **Intuitive dashboard**: clear and responsive interface to easily manage all aspects of rentals, for both clients and owners."
+            },
+            {
+                "id": 2,
+                "title": "Appointment Management App for Businesses",
+                "date": "2022",
+                "description": "Oh Wow is a mobile app that helps businesses manage client appointments, services, and employees through an intuitive interface that streamlines scheduling and salon operations.",
+                "link": "https://github.com/B-Manitas/Oh-Wow",
+                "technologies": [
+                    "React-Native",
+                    "JavaScript",
+                    "MongoDB",
+                    "Redux"
+                ],
+                "fullDescription": "A **mobile application** that simplifies **managing client appointments** for businesses.\n\nYou can easily add and manage **services, employees, and contact information** for your salon.\n\nThe application also allows you to **schedule and manage appointments** for your clients, ensuring that you never miss an important meeting or reservation.\n\nOh Wow provides an **intuitive and user-friendly interface** that makes it easy to navigate and manage all aspects of your salon business, helping you **streamline operations** and provide **excellent service** to your clients.",
+                "images": [
+                    "https://raw.githubusercontent.com/B-Manitas/Oh-Wow/refs/heads/main/assets/img/screen_1.png",
+                    "https://raw.githubusercontent.com/B-Manitas/Oh-Wow/refs/heads/main/assets/img/screen_2.png",
+                    "https://raw.githubusercontent.com/B-Manitas/Oh-Wow/refs/heads/main/assets/img/screen_3.png"
+                ]
+            },
+            {
+                "id": 1,
+                "title": "Time's App – Sport Workout Planner",
+                "date": "2021",
+                "description": "Time's App is a fitness application that helps users plan, schedule, and manage workouts efficiently to achieve their fitness goals.",
+                "link": "https://github.com/B-Manitas/Times-App",
+                "technologies": [
+                    "React Native",
+                    "JSONBin",
+                    "Spotify API",
+                    "Redux"
+                ],
+                "fullDescription": "**Time's App** is a **fitness application** designed to help you **plan and manage your workouts efficiently**.\nWith its **intuitive interface** and **easy-to-use features**, you can **create customized exercise sequences** and **set specific time durations** for each activity.\nAdditionally, the app comes with a **program planning system** that enables you to **schedule your workouts in advance**, so you never miss a session.\nWhether you're a **beginner** or a **fitness enthusiast**, **Time's App** can help you **achieve your fitness goals** with ease."
+            }
+        ]
+    },
+    {
+        "category": "Software",
+        "projects": [
+            {
+                "id": 7,
+                "title": "3D Ulam Spiral",
+                "date": "2023",
+                "description": "3D Ulam Spiral visualizes the distribution of prime, deficit, perfect, and abundant numbers in 3D using pyramid and cube models, with interactive rotation and highlighting features.",
+                "link": "https://github.com/B-Manitas/3D-Ulam-Spiral",
+                "technologies": [
+                    "Processing v3"
+                ],
+                "fullDescription": "3D Ulam Spiral is a project, realized in Processing, which aims at representing in 3D the distribution of prime, deficit, perfect and abundant numbers.\n\nTwo geometric models, a pyramid and a cube, are composed of subcubes associated with a number n. The values of the subcubes are the images by the second degree polynomial associated to the models.\n\nThis programme was developed as part an academic project, in collaboration with collaboration with Pradana Aumars, at the University of Paris-Saclay.\n\nFunctionalities\nTo facilitate the visualisation of the models, it is possible to :\n\nControl the speed and axis of rotation\nManually control the rotation\nChange the coefficients of the second degree polynomials\nClick on a sub-cube to highlight it in both models",
+                "images": [
+                    "https://raw.githubusercontent.com/B-Manitas/3D-Ulam-Spiral/refs/heads/main/program.gif"
+                ]
+            },
+            {
+                "id": 6,
+                "title": "Paint",
+                "date": "2023",
+                "description": "A vector drawing application that lets users create, move, resize, color, layer, annotate, zoom, and save geometric shapes for structured illustrations.",
+                "link": "https://github.com/B-Manitas/Paint",
+                "technologies": [
+                    "Java",
+                    "CSS"
+                ],
+                "fullDescription": "This drawing application is designed to create vector shapes.\n\nIt allows users to draw solid geometric shapes, move them around, choose their color, resize them, and organize them in the foreground or background.\n\n**Features**\n- Draw solid geometric shapes to illustrate your ideas.\n- Move shapes around to position them where you want.\n- Customize the color of shapes to make them stand out.\n- Resize shapes to fit your needs.\n- Organize shapes in foreground or background to structure your drawing.\n- Save your drawings to share them with your collaborators.\n- Zoom in on your drawing to see details.\n- Add text to annotate your drawing and clarify your ideas.",
+                "images": [
+                    "https://raw.githubusercontent.com/B-Manitas/Paint/refs/heads/main/DrawApp.png"
+                ]
+            },
+            {
+                "id": 5,
+                "title": "Mini ML Interpreter",
+                "date": "2023",
+                "description": "Mini ML is a simple programming language in OCaml supporting arithmetic, booleans, functions, and recursion, featuring a lexer, parser, type checker, and interpreter.",
+                "link": "https://github.com/B-Manitas/mini-ml",
+                "technologies": [
+                    "OCaml"
+                ],
+                "fullDescription": "Mini ML is a programming language that allows users to write and execute simple programs. The language is based on the ML programming language and is implemented in OCaml.\n\nThe language supports basic arithmetic and boolean operations, conditional statements. It also supports functions and recursion.\n\nThe project contains a lexer, a parser, a type checker and an interpreter : The lexer is responsible for tokenizing the input text into a list of tokens. The parser is responsible for parsing the tokens into an abstract syntax tree. The type checker is responsible for checking the types of the expressions in the program. Finally, the interpreter is responsible for executing the program."
+            },
+            {
+                "id": 4,
+                "title": "Password Manager",
+                "date": "2022",
+                "description": "A Python3 command-line tool to manage, modify, delete, and search passwords for single or multiple sites.",
+                "link": "https://github.com/B-Manitas/Password-Manager",
+                "technologies": [
+                    "C++",
+                    "SFML"
+                ],
+                "fullDescription": "**Password Manager**\nA command line application, developed with Python3, to manage your passwords.\n\n**Controls**\n- insert => to register a new password.\n- modify => to modify an existing password.\n- delete => to delete an existing password.\n- search => to display information from a single site.\n- search_all => to display informations from all sites."
+            },
+            {
+                "id": 3,
+                "title": "Ants simulation",
+                "date": "2021",
+                "description": "Simulation modeling competing ant colonies, focusing on pheromone-based communication and collective behavior, enhancing understanding of social insects and programming skills.",
+                "link": "https://github.com/B-Manitas/Ants-Simulation",
+                "technologies": [
+                    "C++",
+                    "SFML"
+                ],
+                "fullDescription": "The project involved developing a **C++ simulation** using the **SFML library** to simulate competing **ant colonies** in their search for food. The objective was to model the behavior of ants in nature, specifically focusing on their **communication** and **navigation mechanisms** that rely on **pheromones**.\n\nBy running the simulation, it was possible to observe the competitive dynamics among **ant colonies**, their utilization of **pheromones** for communication, and the emergence of **collective behavior** from individual actions. This project deepened the understanding of **social insects** and enhanced **programming skills** in **C++** and **system modeling**."
+            },
+            {
+                "id": 2,
+                "title": "Game of Life Simulator",
+                "date": "2020",
+                "description": "Simulation of an interactive automated cell grid where users can manipulate cell states and observe life and death rules in action.",
+                "link": "https://github.com/B-Manitas/Game-of-Life",
+                "technologies": [
+                    "Python",
+                    "PyQt5",
+                    "Numpy"
+                ],
+                "fullDescription": "This project simulates an automated cell. The application creates a virtual grid where red cells are alive, and white cells are dead.\n\nThe simulation follows specific rules based on the number of neighboring cells: If a cell is alive and has less than two neighbors, it dies due to underpopulation. If it has more than three neighbors, it dies due to overpopulation. If a cell is dead and has exactly three neighbors, it comes to life, creating a new cell.\n\nThe user can interact with the simulation by clicking on the cells to change their state, allowing the creation of specific patterns. Additionally, the user can adjust the initial probability of living cells to customize the simulation further.",
+                "images": [
+                    "https://raw.githubusercontent.com/B-Manitas/Game-of-Life/refs/heads/master/gif_application.gif"
+                ]
+            },
+            {
+                "id": 1,
+                "title": "Network Chat Server",
+                "date": "2020",
+                "description": "A Python Tkinter application enabling users to easily create and manage password-protected discussion servers with a simple and intuitive interface.",
+                "link": "https://github.com/B-Manitas/Game-of-Life",
+                "technologies": [
+                    "Python",
+                    "Tkinter"
+                ],
+                "fullDescription": "This project is a **computer application** developed with **Python's tkinter library** that allows users to create a **discussion group** on a **network**.\n\nWith this application, you can easily **create a server** and **invite other users** to connect by providing the **IP address** and **port number**. The **server** can be **password protected** to ensure only **authorized users** can join.\n\nThe application is **user-friendly**, making it **easy to create and launch a server**. The **user interface** is **simple and intuitive**, accessible to everyone. The **server owner** can **exclude users** or **change the password** as needed.",
+                "images": [
+                    "https://raw.githubusercontent.com/B-Manitas/Messaging-App/refs/heads/master/img_readme/homepage.png",
+                    "https://raw.githubusercontent.com/B-Manitas/Messaging-App/refs/heads/master/img_readme/serverpage.png",
+                    "https://raw.githubusercontent.com/B-Manitas/Messaging-App/refs/heads/master/img_readme/clientpage.png"
+                ]
+            }
+        ]
+    },
+    {
+        "category": "Video Games",
+        "projects": [
+            {
+                "id": 2,
+                "title": "Chrobot – A Unity Platformer Game",
+                "date": "2017",
+                "description": "A Unity platformer game with multiple maps, characters, and obstacles, where players collect coins to unlock new characters while testing their skills and reflexes.",
+                "technologies": [
+                    "Unity",
+                    "C#"
+                ],
+                "fullDescription": "This project is a **Unity-based platformer game** featuring **multiple maps**, **various characters**, **challenging obstacles**, and an **in-game store**, offering an engaging experience that tests players' **skills** and **reflexes** while providing hours of **entertainment**.\n\nThe game requires players to navigate each level carefully, avoid **dangerous obstacles** and **enemies**, and collect **coins** to unlock and purchase **new characters**."
+            },
+            {
+                "id": 1,
+                "title": "Thoughtful Quiz – A Unity General Knowledge Game",
+                "date": "2016",
+                "description": "A fast-paced, time-limited quiz game that challenges players’ general knowledge and lets them compete for high scores.",
+                "technologies": [
+                    "Unity",
+                    "JavaScript"
+                ],
+                "fullDescription": "This Unity game is a **simplistic general knowledge quiz**. Players are given **60 seconds** to answer as many questions as possible.\n\nOnce the time runs out, a menu appears showing the player's **score** for the game, as well as the **best score** to challenge.\n\nThe game provides an **engaging** and **time-limited experience** where players can test their **knowledge across various categories**. It offers a **quick** and **entertaining** way to challenge oneself and compete for the **highest score**. Whether you're looking to have fun or improve your general knowledge, this quiz game is a **great choice**."
+            }
+        ]
+    }
+]
