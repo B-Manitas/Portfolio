@@ -1,5 +1,4 @@
 .section {
-	padding: 6rem 8vw;
 	background: var(--background-blue);
 }
 
@@ -103,5 +102,41 @@
 
 	.imageWrapper {
 		height: 180px;
+	}
+
+	.title {
+		font-size: 1.4rem;
+	}
+
+	.desc {
+		font-size: 1.05rem;
+	}
+}
+
+@media (max-width: 768px) {
+	.grid {
+		grid-template-columns: 1fr;
+		gap: 1.5rem;
+	}
+
+	.imageWrapper {
+		height: 160px;
+	}
+
+	.title {
+		font-size: 1.3rem;
+	}
+
+	.desc {
+		font-size: 1rem;
+	}
+
+	.content {
+		padding: 1rem;
+	}
+
+	.badge {
+		font-size: 0.8rem;
+		padding: 0.2rem 0.5rem;
 	}
 }
