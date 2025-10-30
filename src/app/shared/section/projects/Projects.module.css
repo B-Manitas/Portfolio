@@ -1,5 +1,4 @@
 .section {
-    padding: 6rem 8vw;
     background-color: var(--white-light);
 }
 
@@ -107,7 +106,8 @@
     display: flex;
     flex-wrap: wrap;
     gap: 0.5rem;
-    margin-top: 0.625rem;
+    padding-top: 0.625rem;
+    margin-top: auto;
 }
 
 .techBadge {

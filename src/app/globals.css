@@ -36,6 +36,15 @@ body {
   margin: 0;
 }
 
+section {
+  padding: 6rem 8vw;
+}
+
+::selection {
+  background-color: var(--primary);
+  color: var(--white);
+}
+
 a {
   color: inherit;
   text-decoration: none;
