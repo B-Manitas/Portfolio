@@ -44,7 +44,6 @@ export default function Header() {
 					<Link href="#projects" onClick={handleSmoothScroll('projects')}>
 						Portfolio
 					</Link>
-					<Link href="/altair-gym">Altair Gym</Link>
 					<Link href="#contact" onClick={handleSmoothScroll('contact')}>
 						Contact
 					</Link>
