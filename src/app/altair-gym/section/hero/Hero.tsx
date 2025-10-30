@@ -2,7 +2,7 @@
 
 import styles from './Hero.module.css';
 import { FiLinkedin, FiInstagram, FiGlobe, FiTwitter } from 'react-icons/fi';
-import heroImage from 'public/images/altair-hero.png';
+import heroImage from 'public/images/altair-gym/landing-page.png';
 import Image from 'next/image';
 
 export default function Hero() {
