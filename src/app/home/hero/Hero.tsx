@@ -47,7 +47,7 @@ export default function Hero() {
 
 			<div className={styles.centerContent}>
 				<h1 className={styles.name}>{typedName}</h1>
-				<p className={styles.role}>AI-oriented Full-Stack Engineer</p>
+				<p className={styles.role}>Data Scientist</p>
 				<p className={styles.quote}>
 					<em>“They did not know it was impossible, so they did it.”</em>
 				</p>
