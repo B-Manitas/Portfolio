@@ -115,5 +115,19 @@
                 ]
             }
         ]
+    },
+    {
+        "year": 2026,
+        "items": [
+            {
+                "title": "Data Scientist Consultant",
+                "subtitle": "Askills",
+                "location": "Paris, France",
+                "type": "job",
+                "link": "https://askills.fr",
+                "linkText": "askills.fr",
+                "clickable": false
+            }
+        ]
     }
 ]
